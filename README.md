@@ -3,6 +3,8 @@ FFMPEG screen recorder command line configuration on Windows.
 
 The provided `ffmpeg` command is configured to capture your Windows desktop screen and encode it into a high-quality video file. Let's break down each part of the command to understand its functionality and purpose.
 
+`Press Q` or `CTL + c` to end recording.
+
 ### **Complete Command:**
 ```bash
 ffmpeg -f gdigrab -framerate 120 -offset_x 0 -offset_y 0 -video_size 3840x2048 -show_region 1 -i desktop -c:v libx264 -crf 0 output.mp4
